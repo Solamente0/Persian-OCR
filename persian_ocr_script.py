@@ -195,12 +195,12 @@ def main():
     """
     # Initialize the OCR system
     # You'll need to provide the path to your trained model
-    model_path = "path/to/your/trained_model.h5"  # or .pth for PyTorch
+    model_path = "./LeNet5.h5"  # or .pth for PyTorch
     
     ocr = PersianOCR(model_path)
     
     # Path to your input image containing Persian text
-    image_path = "path/to/your/persian_text_image.jpg"
+    image_path = "./text_image.jpg"
     
     try:
         # Recognize text in the image
@@ -221,7 +221,7 @@ def test_preprocessing():
     ocr = PersianOCR()  # No model loaded
     
     # Test image preprocessing
-    image_path = "path/to/your/test_image.jpg"
+    image_path = "./test_image.jpg"
     
     try:
         # Segment characters
